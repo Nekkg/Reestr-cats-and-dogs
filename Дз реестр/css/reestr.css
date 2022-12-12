@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/back.jpg);
+}
+
+h1{
+    text-align: center;
+}
+
+.myTable{
+    width: fit-content;
+    margin: 0 15px;
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+.myTable th {
+    border-top: 1px solid #777777;	
+    border-bottom: 1px solid #777777; 
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.myTable tr:nth-child(odd) {
+    background: #ebf3f9;
+}
+
+.myTable th:first-child {
+    border-left: 1px solid #777777;	
+    border-bottom:  1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+
+.myTable th:last-child {
+    border-right: 1px solid #777777;
+    border-bottom:  1px solid #777777;
+    box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+}
+  
+.myTable td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.button, #fullYear{
+    width: 100%;
+    height: 40px;
+    background-color: #f5ffff;
+    border: 1px solid #777777;
+    border-radius: 8px;
+}
+
+.years{
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button:hover, #fullYear:hover{
+    background-color: #999999;
+}
+
+#end{
+    width: 150px;
+    margin: 25px 50%;
+}
